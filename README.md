@@ -1,8 +1,8 @@
 <h1 align="center">✨ Fullstack Chat & Video Calling App ✨</h1>
+
 Live Demo: [Stream Meet](https://stream-meet-cvq3.onrender.com)
 
-![Demo App](/frontend/dist/image.png)
-![App Screenshot](/frontend/dist/image.png)
+![Demo App](/frontend/public/image.png)
 
 Highlights:
 
@@ -43,34 +43,15 @@ VITE_STREAM_API_KEY=your_stream_api_key
 ## 🔧 Run the Backend
 
 ```bash
-# install (from project root)
-
-npm install --prefix backend
-npm install --prefix frontend
-
-# run dev
-npm run dev --prefix backend
-npm run dev --prefix frontend
-
-# build + serve (production)
-cd frontend && npm run build
-$env:PORT='5001'; $env:NODE_ENV='production'; npm start --prefix backend
+cd backend
+npm install
+npm run dev
 ```
 
-Environment (minimum)
-- Backend: `PORT`, `MONGODB_URI`, `JWT_SECRET`, `STEAM_API_KEY`, `STEAM_API_SECRET`
-- Frontend: `VITE_STREAM_API_KEY`
+## 💻 Run the Frontend
 
-API (short)
-- Auth: `/api/auth/*` (signup, login, logout, onboarding, me)
-- Users: `/api/users/*` (friends, friend-requests)
-- Chat: `/api/chat/token` (Stream token)
-
-Diagrams
-- See `docs/architecture.mmd`, `docs/auth-sequence.mmd`, `docs/er-diagram.mmd` for Mermaid diagrams.
-
-License
-- Add your preferred license.
-
-Done — concise README. Want me to commit these changes?
-
+```bash
+cd frontend
+npm install
+npm run dev
+```
