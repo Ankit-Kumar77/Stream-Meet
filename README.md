@@ -1,7 +1,7 @@
 <h1 align="center">✨ Fullstack Chat & Video Calling App ✨</h1>
 Live Demo: [Stream Meet](https://stream-meet-cvq3.onrender.com)
 
-![Demo App](/frontend/public/image.png)
+![Demo App](/frontend/dist/image.png)
 
 Highlights:
 
