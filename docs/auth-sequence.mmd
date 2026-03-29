@@ -1,0 +1,16 @@
+sequenceDiagram
+  participant U as User (Browser)
+  participant FE as Frontend
+  participant BE as Backend
+  participant DB as MongoDB
+  participant STR as Stream Service
+
+  U->>FE: Submit credentials (email/password)
+  FE->>BE: POST /api/auth/login
+  BE->>DB: findOne({ email })
+  DB-->>BE: user document
+  BE->>BE: verify password, generate JWT, create session cookie
+  BE-->>FE: 200 OK + user data (cookie set)
+  FE->>STR: request Stream auth token (if using server-side token)
+  STR-->>FE: Stream token
+  FE-->>U: Auth success, redirect to app

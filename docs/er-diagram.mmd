@@ -1,0 +1,27 @@
+erDiagram
+  USER {
+    ObjectId _id PK
+    string fullName
+    string email
+    string password
+    string bio
+    string profilePic
+    string nativeLanguage
+    string learningLanguage
+    string location
+    boolean isOnboarded
+    timestamp createdAt
+    timestamp updatedAt
+  }
+
+  FRIEND_REQUEST {
+    ObjectId _id PK
+    ObjectId sender FK
+    ObjectId recipient FK
+    string status
+    timestamp createdAt
+    timestamp updatedAt
+  }
+
+  USER ||--o{ FRIEND_REQUEST : "sends"
+  USER ||--o{ USER : "friends"
