@@ -2,8 +2,6 @@
 
 Live Demo: [Stream Meet](https://stream-meet-cvq3.onrender.com)
 
-![Demo App](/frontend/public/image.png)
-
 Highlights:
 
 - 🌐 Real-time Messaging with Typing Indicators & Reactions
