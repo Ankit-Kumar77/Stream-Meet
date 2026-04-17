@@ -53,3 +53,5 @@ cd frontend
 npm install
 npm run dev
 ```
+
+Open For Contribution
